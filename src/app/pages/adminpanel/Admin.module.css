@@ -1,0 +1,290 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241,241,241);
+  min-height: 95vh;
+}
+
+.left{
+  width: 32vh;
+  height: 95vh;
+  background-color: rgb(241,241,241);
+  display: flex;
+  padding: 50px 0px;
+  padding-left: 40px;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.adminsection{
+  display: flex;
+  font-size: 19px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.adminsection p{
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.img_container{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+.adminsection img{
+  transform: scale(1.8);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.links{
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.link1{
+  padding: 6px 17px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  width: 140px;
+  background-color: rgb(8,50,222);
+  transition: 300ms;
+  border: 1px solid rgb(8,50,222);
+}
+
+.link1:hover{
+  color: black;
+  background-color: rgb(241,241,241);
+  border: 1px solid rgb(227, 226, 226);
+}
+
+.link1 i {
+  font-size: 20px;
+}
+
+.link2 i {
+  font-size: 20px;
+}
+
+.link2{
+  padding: 8px 17px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  width: 170px;
+  transition: 300ms;
+}
+
+.link2:hover{
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(8,50,222);
+}
+
+#dropdown button{
+  background-color: rgb(241,241,241)!important;
+  color: black;
+  border: none;
+  max-width: 150px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px;
+  padding-left: 17px;
+}
+
+#dropdown i{
+  font-size: 20px;
+}
+
+#uldrop{
+  margin-right: 30px;
+}
+
+#uldrop a:hover{
+  transition: 300ms;
+  color: white;
+  background-color: rgb(27, 69, 235);
+}
+
+.Signout{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-left: 19px;
+  bottom: -385px;
+  transition: 300ms;
+}
+
+.Signout:hover{
+  color: rgb(8,50,222);
+}
+
+.Signout i{
+  font-size: 20px;
+}
+
+.right{
+  width: 178vh;
+  min-height: 95vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 100px;
+  gap: 40px;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 13px;
+}
+
+.top img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.top h1{
+  padding-top: 20px;
+  color: black; font-weight: 600;
+}
+
+.top h1 i{
+  font-size: 25px;
+  margin-left: 8px;
+}
+
+.bottom h2{
+  color: black;
+}
+
+.admin_container{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.admin_card{
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  transition: 300ms;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.admin_card:hover{
+  border: 1px solid rgb(196, 196, 196);
+  transform: scale(1.1);
+  background-color: rgb(228, 227, 227);
+}
+
+.admin_card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.ptext{
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+.ptext p{
+  width: 50px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.admin_card span{
+  color: rgb(116,116,116);
+}
+
+.top_card{
+  text-align: end;
+}
+
+.add_admin_card{
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(8,50,222);
+  color: rgb(8,50,222);
+  border-radius: 10px;
+  transition: 300ms;
+}
+
+.add_admin_card i{
+  font-size: 64px;
+}
+
+.add_admin_card span{
+  position: relative;
+  font-size: 16px;
+  top: -27px;
+}
+
+.add_admin_card:hover{
+  background-color: rgb(204, 213, 249);
+}
+
+@media (max-width: 650px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left{
+    display: flex;
+    width: 500px;
+    height: 60vh;
+    align-items: center;
+  }
+  .Signout{
+    bottom: -90px;
+    padding-left: 3px;
+  }
+  .top{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right{
+    padding: 20px;
+  }
+
+  .top{
+    width: 500px;
+  }
+  .bottom{
+    width: 500px;
+    text-align: center;
+  }
+  .admin_container{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
